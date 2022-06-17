@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400&display=swap');
+
+body {
+    line-height: 1.8;
+    color: #ada6a6;
+    font-size: 15px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #11245A;
+}
+
+.title-sm {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+a {
+    font-weight: 700;
+    transition: all 0.4s ease;
+}
+
+img {
+    width: 100%;
+}
+
+small {
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* .T-logo {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #11245A !important;
+
+} */
+
+.navbar {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+
+.navbar .nav-link {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar .nav-link.active {
+    color: #e53636;
+}
+
+/*Darkmode styling take note
+.navbar .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.change-theme {
+    font-size: 1.1rem;
+    color: #898fa1;
+    margin: auto 10px;
+    cursor: pointer;
+}
+
+.change-theme:hover {
+    color: #11245A;
+}
+*/
+
+/*Hero Section Styling Starts Here*/
+
+#home {
+    background: linear-gradient(rgba(88, 83, 139, 0.1), rgba(88, 83, 139, 0.2)), url(/img/hero_img2.jpg);
+    isolation: isolate;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+
+#home h1 {
+    font-weight: 200;
+}
+
+#home p {
+    max-width: 550px;
+    margin: 18px auto;
+}
+
+.btn {
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 12px 28px;
+    border-radius: 12%;
+    isolation: isolate;
+
+}
+
+.btn-brand {
+    background-color: #11245A;
+    color: #e53636;
+}
+
+
+
+.btn-brand:hover {
+    background-color: #162e6f;
+    transform: scale(1.1);
+}
+
+
+
+/*Services Section Styling Starts Here*/
+
+.S-intro {
+    text-align: center;
+    margin-bottom: 20px;
+
+
+}
+
+.S-intro .horizontal-line {
+    width: 100px;
+    height: 2px;
+    background-color: #11245A;
+    margin: 16px auto 0 auto;
+}
+
+.icon-box {
+    width: 50px;
+    height: 50px;
+    background-color: #11245A;
+    color: #fff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    flex: none;
+    isolation: isolate;
+}
+
+/*Portfolio Section Styling Starts Here*/
+
+.P-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.P-item img,
+.P-item .P-overlay {
+    transition: all .4s ease;
+}
+
+.P-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 36, 90, 0.8);
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+    opacity: 0;
+}
+
+
+.P-overlay h3,
+.P-overlay h6 {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 19px;
+
+}
+
+.P-item:hover .P-overlay {
+    opacity: 1;
+}
+
+.P-item:hover img {
+    transform: scale(1.1);
+    transition-duration: .5s;
+}
+
+/*Feature Section Styling Starts Here*/
+
+.feature .icon-box {
+    width: 34px;
+    height: 34px;
+    border-radius: 100px;
+    font-size: 24px;
+}
+
+
+/*Team Section Styling Starts Here*/
+
+.team-mm {
+    background-color: #11245A;
+    isolation: isolate;
+}
+
+.team-mm.even-mm {
+    background-color: #162e6f;
+}
+
+.team-mm .horizontal-line {
+    width: 70px;
+    height: 2px;
+    background-color: rgba(128, 128, 128, 0.438);
+    margin: 16px auto;
+}
+
+.team-mm .team-mm-img img {
+    filter: grayscale(80%);
+}
+
+.team-mm .team-mm-img img,
+.team-mm .team-mm-img .social-links {
+    transition: all 0.4s ease;
+
+}
+
+.team-mm .team-mm-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.team-mm .team-mm-img .social-links {
+    width: 100%;
+    height: 60px;
+    background-color: #000000;
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.team-mm .team-mm-img .social-links a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    font-size: 24px;
+    color: white;
+    border-radius: 100px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.team-mm .team-mm-img .social-links a:hover {
+    background-color: #fff;
+    color: #11245A;
+}
+
+.team-mm:hover .team-mm-img .social-links {
+    bottom: 0;
+
+}
+
+.team-mm:hover img {
+    transform: translateY(-60px);
+}
+
+/*Testimonials Page Styling*/
+
+#testimonials img {
+    width: 65px;
+    height: 65px;
+    border-radius: 100px;
+    transition: all 0.4s ease;
+}
+
+#testimonials .nav-pills .nav-link.active {
+    background-color: transparent;
+}
+
+#testimonials .nav-pills .nav-link.active img {
+    transform: scale(1.8);
+}
+
+.review .stars {
+    color: #11245A;
+    isolation: isolate;
+}
+
+.review p {
+    max-width: 600px;
+    margin: 24px auto;
+    font-size: 18px;
+    font-style: italic;
+}
+
+/*Clientele Page Styling*/
+#clientele img {
+    height: 45px;
+    margin: 25px auto;
+    padding: 2px 1px;
+}
+
+#clientele {
+    isolation: isolate;
+}
+
+/*Contact Page Styling*/
+form .form-control {
+    border-radius: 0;
+    isolation: isolate;
+}
+
+form .form-control::focus {
+    box-shadow: none;
+    border-color: #927a7a;
+}
+
+/*cta*/
+
+#cta {
+    background-color: #11245A;
+    isolation: isolate;
+}
+
+/*Footer Section*/
+.footer-top {
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.footer-bottom {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid #11245A;
+
+
+}
+
+footer .footer-links a,
+footer .social-links a {
+    color: #11245A;
+    text-decoration: none;
+}
+
+footer .social-links a {
+    font-size: 24px;
+}
+
+footer .footer-links a {
+    display: block;
+    font-weight: 400;
+}
+
+footer .social-links a:hover,
+footer .social-links a:hover {
+    color: #000;
+
+}
